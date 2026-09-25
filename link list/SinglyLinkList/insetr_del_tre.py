@@ -48,7 +48,8 @@ class LinkedList:
                 print("Value not found")
 
     # Traverse 
-    # linked list
+    # linked 
+    # list 
     def traverse(self):
 
         if self.head is None:
