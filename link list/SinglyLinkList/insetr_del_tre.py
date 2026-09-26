@@ -49,6 +49,8 @@ class LinkedList:
 
     # Traverse 
     # linked 
+
+    
     # list 
     def traverse(self):
 
