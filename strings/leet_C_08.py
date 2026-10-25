@@ -20,9 +20,9 @@ class Solution:
             ans = ans * 10 + int(s[i])
             i += 1
 
-        anns *=
+        # anns *=
         
-         sign
+        #  sign
 
         # 32-bit integer range
         ans = max(-2**31, min(ans, 2**31 - 1))

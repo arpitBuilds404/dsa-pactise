@@ -1,0 +1,38 @@
+def remove_duplicates(nums):
+    freq_map = {}
+    j = 0
+
+    # Count frequency of each element
+    for i in range(len(nums)):
+        freq_map[nums[i]] = freq_map.get(nums[i], 0) + 1
+
+    # Place unique elements at the start
+    for k in freq_map.keys():
+        nums[j] = k
+        j += 1
+
+    return j  # returns the count of unique elements
+
+# Example usage
+nums = [1, 1, 2, 3, 4, 7, 9, 9, 9, 10]
+length = remove_duplicates(nums)
+print("Unique elements:", nums[:length])
+
+
+# optimal
+
+
+
+class Solution:
+    def removeDuplicates(self, nums):
+        n= len(nums)
+        if n==1:
+            return 1
+        k=0
+        j=k+1
+        while j !=n:
+            if nums[k] !=nums[j]:
+                k+=1
+                nums[k],nums[j]=nums[j],nums[k]
+            j+=1
+        return k+1  
